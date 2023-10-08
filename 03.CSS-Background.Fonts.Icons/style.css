@@ -1,0 +1,109 @@
+* {
+  text-decoration: none;
+  box-sizing: border-box;
+  list-style: none;
+}
+.header {
+  display: flex;
+  justify-content: space-evenly;
+}
+section {
+  height: 90vh;
+  background-image: url("./IMG-20231008-WA0032.jpg");
+  background-size: cover;
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+
+  /* max-width: 1200px; */
+}
+.header nav ul {
+  display: flex;
+}
+.header nav ul li {
+  display: flex;
+  margin: 20px 35px;
+}
+ul li {
+  color: black;
+}
+.headercolor {
+  background-color: white;
+}
+.headercolor .social-ikons {
+  display: flex;
+}
+.headercolor div i {
+  display: flex;
+  margin: 35px 35px;
+  color: blue;
+}
+
+.foto {
+  background-image: url("./IMG-20231008-WA0031.jpg");
+  height: 800vh;
+  background-size: cover;
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+}
+.frontend {
+  font-family: "Tilt Neon", cursive;
+  color: black;
+  text-shadow: 3px 4px 3px rgb(192, 231, 15);
+  text-indent: 30px;
+}
+
+.cont {
+  height: 800vh;
+  background-image: url("./IMG-20231008-WA0031.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+}
+.lorem {
+  font-family: "Tilt Neon", cursive;
+  margin: 0 27px;
+}
+.button {
+  border: 1px solid black;
+  background-color: rgb(227, 227, 236);
+  color: rgb(116, 39, 189);
+  font-weight: 20px;
+  margin: 10px 27px;
+  height: 6vh;
+  width: 110px;
+}
+.button:hover {
+  color: black;
+  background-color: rgb(79, 214, 214);
+}
+.fa-brands {
+  background-color: white;
+}
+/* footer nav .box {
+  display: flex;
+
+}
+footer nav .box  li {
+  display: flex;
+  justify-content: space-evenly;
+}
+.li {
+  font-size: 20px;
+} */
+footer nav.foot {
+  /* margin: 100px 100px 0px 100px; */
+  display: flex;
+
+  color: white;
+  display: inline-block;
+}
+.box ul {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+footer nav {
+  height: 100vh;
+  background-color: rgb(148, 146, 146);
+  color: azure;
+}
