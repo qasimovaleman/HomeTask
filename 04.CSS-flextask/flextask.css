@@ -1,0 +1,44 @@
+* {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  text-decoration: none;
+}
+.header {
+  display: flex;
+  justify-content: center;
+  margin: 15px 0;
+}
+.header ul {
+  display: flex;
+  column-gap: 60px;
+}
+header {
+  border-bottom: 1px solid black;
+}
+.home {
+  margin: 60px 25px;
+}
+.products {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: start;
+  gap: 15px;
+  margin: 10px 10px 30px 60px;
+}
+.product-info {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 25%;
+  border: 1px solid rgb(247, 235, 235);
+}
+.text {
+  display: flex;
+  justify-content: space-between;
+}
+ul li a {
+    color: black;
+    font-size: 20px;
+}
