@@ -42,3 +42,6 @@ ul li a {
     color: black;
     font-size: 20px;
 }
+span,p {
+  color: grey;
+}
