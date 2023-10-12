@@ -228,7 +228,13 @@ nav ul li a {
   color: gray;
   text-align: center;
 }
-.container {
+.containerr {
   display: flex;
   align-items: center;
+}
+.header ul li a:hover {
+  color: orange;
+}
+.social-icons  i:hover {
+  color: orange;
 }
