@@ -224,7 +224,6 @@ nav ul li a {
   display: flex;
   justify-content: space-around;
   column-gap: 30px;
-  .box-services .box2;
 }
 .box-services .box {
   column-gap: 40%;
@@ -252,6 +251,7 @@ nav ul li a {
 }
 .containerr {
   display: flex;
+  justify-content: center;
   align-items: center;
 }
 .header ul li a:hover {
@@ -294,16 +294,15 @@ span {
   display: flex;
   justify-content: space-around;
   align-items: center;
-  
 }
 .box-services .box {
   display: flex;
   justify-content: space-around;
   align-items: center;
-
 }
-.box-starting, .header-services-text {
-border-bottom: 2px solid orange;
+.box-starting,
+.header-services-text {
+  border-bottom: 2px solid orange;
 }
 /* .box-1 {
   margin-left: 10%;
