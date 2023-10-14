@@ -55,5 +55,5 @@ footer {
     height: 20%;
 }
 footer span {
-    margin-top: 80%;
+    border-bottom: 1px solid yellowgreen;
 }
