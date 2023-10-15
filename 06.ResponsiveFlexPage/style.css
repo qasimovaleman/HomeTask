@@ -115,8 +115,16 @@
   .container {
     flex-direction: column;
   }
-   .div-left, .div-right{
+  /* .div-left, .div-right{
+    display: flex;
+    flex-direction: column; */
+  .div-left .div-50 {
     display: flex;
     flex-direction: column;
   }
+  .div-right .div-100 {
+    display: flex;
+    flex-direction: column;
+  }
+
 }
