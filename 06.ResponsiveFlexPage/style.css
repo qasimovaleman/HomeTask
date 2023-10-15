@@ -1,0 +1,122 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+.container {
+  height: 80vh;
+  display: flex;
+}
+.div-left,
+.div-right {
+  width: 50%;
+}
+.box-50 {
+  display: flex;
+  justify-content: space-between;
+}
+.box-100 {
+  display: flex;
+  justify-content: center;
+}
+.box-25 {
+  display: flex;
+  justify-content: space-between;
+}
+.home,
+.about {
+  height: 40vh;
+  width: 50%;
+}
+.pricing {
+  height: 20vh;
+  width: 100%;
+}
+.customer,
+.offers,
+.contact,
+.menu {
+  height: 20vh;
+  width: 25%;
+}
+.box {
+  background-color: blue;
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 1%;
+}
+.projects {
+  height: 20vh;
+  width: 100%;
+}
+.blog,
+.galery,
+.portfolio,
+.team {
+  height: 20vh;
+  width: 25%;
+}
+.events {
+  height: 40vh;
+  width: 100%;
+}
+@media only screen and (min-width: 768px) and (max-width: 1023px) {
+  .box {
+    background-color: green;
+  }
+  .home,
+  .about {
+    height: 13vh;
+    width: 50%;
+  }
+  .projects {
+    height: 13vh;
+    width: 100%;
+  }
+  .pricing {
+    height: 13vh;
+    width: 100%;
+  }
+  .customer,
+  .offers,
+  .contact,
+  .menu {
+    height: 13vh;
+    width: 25%;
+  }
+  .events {
+    height: 13vh;
+    width: 100%;
+  }
+
+  .box-100.projects {
+    order: 1;
+  }
+  .box-25.blog,
+  .galery,
+  .portfolio,
+  .team {
+    order: 2;
+  }
+  .box-100.pricing {
+    order: 3;
+  }
+  .box-25.customer,
+  .offers,
+  .contact,
+  .menu {
+    order: 4;
+  }
+  .box-200.events {
+    order: 5;
+  }
+  .container {
+    flex-direction: column;
+  }
+   .div-left, .div-right{
+    display: flex;
+    flex-direction: column;
+  }
+}
