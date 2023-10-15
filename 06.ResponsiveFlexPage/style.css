@@ -5,7 +5,8 @@
 }
 .container {
   height: 80vh;
-  display: flex;
+   display: flex; 
+  
 }
 .div-left,
 .div-right {
@@ -113,6 +114,7 @@
     order: 5;
   }
   .container {
+
     flex-direction: column;
   }
   /* .div-left, .div-right{
