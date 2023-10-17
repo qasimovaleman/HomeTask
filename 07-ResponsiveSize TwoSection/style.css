@@ -149,7 +149,8 @@ i {
     }
     .div-right {
       margin: 0 auto;
-        flex-direction:column ;
+      justify-content: space-between;
+        /* flex-direction:column ; */
     }
     .foto-div img {
         width: 150px;
