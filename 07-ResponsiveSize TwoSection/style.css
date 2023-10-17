@@ -11,13 +11,14 @@
   margin-top: 50px;
 }
 .div-left {
+  display: flex;
   margin-right: 10px;
 }
 .div-right {
   display: flex;
   justify-content: center;
 }
-.div-right img {
+.div-right img  , .div-left img {
   width: 180px;
   height: 180px;
   border-radius: 10px;
@@ -147,6 +148,7 @@ i {
         flex-direction: column;
     }
     .div-right {
+      margin: 0 auto;
         flex-direction:column ;
     }
     .foto-div img {
@@ -157,6 +159,9 @@ i {
     }
     .foto-div {
         margin: 0 auto;
+    }
+    .foto {
+      flex-direction: column;
     }
     .button {
         height: 8%;
@@ -183,6 +188,7 @@ i {
         flex-direction: column;
     }
     .div-left {
+      flex-direction: column;
         margin: 0 auto;
     }
     }
