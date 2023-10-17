@@ -1,0 +1,84 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    list-style: none;
+    text-decoration: none;
+    outline: none;
+}
+.container {
+    
+    margin: auto auto;
+    width: 40%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 6% auto 10% auto;
+}
+h1 {
+    display: flex;
+    justify-content: center;
+    margin: 10% 0 20% 0;
+    font-size: 50px;
+    font-family: 'Lexend Deca', sans-serif;
+    color: white;
+}
+h5 {
+    display: flex;
+    justify-content: center;
+    margin: 15% 0 10% 0 ;
+    font-size: 16px;
+    font-family: 'Lexend Deca', sans-serif;
+    color: white;
+}
+body {
+    background-color: #093545;
+
+}
+.rem {
+    color: white;
+}
+.input-info {
+    width: 90%;
+    height: 5vh;
+    margin: 10px 0;
+    border: none;
+    border-radius: 10px;
+    background-color: #224957;
+    color: white;
+    padding: 0 15px;
+
+}
+.input-info::placeholder {
+    color: white;
+}
+.remember {
+    border-color: transparent;
+    background-color: #224957;
+}
+.remember::before {
+    background-color: green;
+}
+.submit button {
+    width: 90%;
+    height: 5vh;
+    margin: 10px 0;
+    border: none;
+    border-radius: 10px;
+    background-color: green;
+    color: white;
+}
+.submit button:hover {
+    background-color: white;
+    color: green;
+    border: 3px solid green;
+}
+.check a {
+    margin-left: 14%;
+    color: green;
+}
+img {
+    width: 100%;
+    position: absolute;
+    bottom: 5px;
+}
