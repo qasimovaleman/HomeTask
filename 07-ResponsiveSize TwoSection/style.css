@@ -118,6 +118,10 @@ h3.ezplare {
 }
 .foto-div {
   border: 1 px solid rgb(163, 223, 223);
+  transition: 0.3s;
+}
+.foto-div:hover {
+  transform: translateY(10px);
 }
 .container-2 i .fa-solid {
   display: flex;
