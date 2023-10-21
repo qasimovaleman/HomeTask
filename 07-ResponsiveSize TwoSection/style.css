@@ -31,7 +31,25 @@
   color: green;
   margin-top: 20px;
 }
-
+.icon-green .iconh3  h4 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 26px;
+}
+.learn-more {
+  background-color: green;
+  color: white;
+  width: 120px;
+  height: 40px;
+  border: none;
+  cursor: pointer;
+  border-radius: 3px;
+}
+.learn-more:hover {
+  background-color: rgb(60, 170, 60);
+  color: rgb(44, 39, 39);
+}
 .div-top {
   display: flex;
   justify-content: center;
@@ -105,6 +123,43 @@ section .container {
   margin-right: auto;
   text-align: center;
 }
+.container-234 {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: white;
+}
+.container-234 .div-left-234,
+.div-right-234 {
+  width: 50%;
+}
+.div-left-234
+.div-left-234 img:hover {
+  background-color: rgb(103, 161, 103);
+  border: 5px solid green;
+  
+}
+.div-left-234 img {
+  height: 48%;
+  width: 49%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 50px auto;
+}
+.div-right-234 {
+  display: flex;
+  flex-direction: column;
+}
+.div-right-234 h3,
+h4 , p {
+  float: left;
+  margin: 15px 0 ;
+}
+.div-right-234 .teaSta {
+color: black;
+}
 .container-2 {
   margin-top: 30px;
 }
@@ -121,6 +176,10 @@ h3.ezplare {
   font-size: 25px;
   display: flex;
   justify-content: center;
+}
+.font-about {
+  font-family: "Grand Hotel", cursive;
+  font-size: 35px;
 }
 .foto {
   display: flex;
@@ -329,7 +388,6 @@ footer {
   font-weight: 32px;
 }
 
-
 @media screen and (max-width: 1023px) {
   .div-top {
     flex-direction: column;
@@ -464,6 +522,9 @@ div h3 {
   border-radius: 5px;
   background-color: rgba(196, 196, 196, 0.849);
 }
+.div1 p {
+  color:  black;
+}
 .submit {
   width: 100%;
 }
@@ -472,6 +533,10 @@ div h3 {
   height: 4vh;
   color: white;
   border: none;
+}
+.submit:hover {
+  background-color: rgb(59, 167, 59);
+  color: rgb(31, 29, 29);
 }
 .text {
   color: rgb(2, 2, 41);
@@ -509,7 +574,9 @@ footer {
   color: green;
   font-weight: 32px;
 }
-
+.social-ikons i:hover {
+  color: green;
+}
 @media screen and (max-width: 1023px) {
   /* .foto {
     flex-direction: column;
