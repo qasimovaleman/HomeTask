@@ -4,6 +4,33 @@
   box-sizing: border-box;
   outline: none;
 }
+.container123 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  column-gap: 30px;
+  background-color: rgb(223, 243, 243);
+}
+
+.icon-green i,
+.iconh3 h4,
+.icon-p p {
+  margin-top: 10px;
+  margin-bottom: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.icon-green .icon-p p {
+  text-align-last: center;
+}
+.icon-green i {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: green;
+  margin-top: 20px;
+}
 
 .div-top {
   display: flex;
@@ -99,6 +126,13 @@ h3.ezplare {
   display: flex;
   justify-content: center;
 }
+.check {
+  display: flex;
+  flex-direction: column;
+}
+.check h3 {
+  float: left;
+}
 .foto-div img {
   width: 250px;
   height: 190px;
@@ -154,7 +188,7 @@ h3.ezplare {
   width: 100%;
   height: 50px;
 }
-i {
+.info i {
   background-color: rgb(177, 236, 177);
   color: green;
   border: 2px solid white;
@@ -166,7 +200,7 @@ i {
 .ikons {
   display: flex;
   justify-content: center;
-  
+
   margin-bottom: 17%;
 }
 .ikons i {
@@ -179,6 +213,303 @@ i {
   justify-content: center;
   font-size: 20px;
 }
+
+body {
+  height: 100vh;
+  background-color: rgba(196, 196, 196, 0.849);
+}
+h3,
+input {
+  font-family: "Martian Mono", monospace;
+}
+.container2 {
+  height: 70%;
+  display: flex;
+}
+.div1 {
+  padding: 70px 150px;
+}
+.address {
+  margin: 10px 0;
+}
+.email {
+  margin: 20px 0 10px 0;
+}
+.telephone {
+  margin: 20px 0 10px 0;
+}
+.div2 {
+  margin: 70px 200px;
+  background-color: white;
+  width: 500px;
+  height: 40vh;
+  border: 1px solid rgb(238, 250, 250);
+  border-radius: 6px;
+}
+.div2 div .text {
+  display: flex;
+  justify-content: center;
+}
+#name {
+  padding: 0 30px;
+  margin: 20px 0 0 0;
+}
+.name {
+  width: 95%;
+  border: 1px solid rgba(196, 196, 196, 0.849);
+  border-radius: 5px;
+  background-color: rgba(196, 196, 196, 0.849);
+  height: 4vh;
+}
+#emaill {
+  padding: 0 30px;
+}
+.emaill {
+  margin: 20px 0 15px 0;
+  width: 95%;
+  border: 1px solid rgba(196, 196, 196, 0.849);
+  border-radius: 5px;
+  background-color: rgba(196, 196, 196, 0.849);
+  height: 4vh;
+}
+#message {
+  padding: 0 30px;
+  margin: 10px 0 40px 0;
+}
+.message {
+  width: 95%;
+  height: 10vh;
+  border: 1px solid rgba(196, 196, 196, 0.849);
+  border-radius: 5px;
+  background-color: rgba(196, 196, 196, 0.849);
+}
+.submit {
+  width: 100%;
+}
+.submit {
+  background-color: green;
+  height: 4vh;
+  color: white;
+  border: none;
+}
+.text {
+  color: rgb(2, 2, 41);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 10px 0 0 0;
+}
+footer {
+  height: 30%;
+  background-color: black;
+}
+.fa-brands {
+  color: white;
+  margin: 20px 5px;
+}
+.social-ikons {
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+  padding: 40px 0 10px 0;
+}
+.green {
+  color: green;
+}
+#textFooter {
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.address,
+.email,
+.telephone {
+  color: green;
+  font-weight: 32px;
+}
+
+
+@media screen and (max-width: 1023px) {
+  .div-top {
+    flex-direction: column;
+  }
+  .div-right {
+    margin: 0 auto;
+    justify-content: space-between;
+  }
+  .foto-div img {
+    width: 250px;
+  }
+  .div-right img {
+    width: 250px;
+  }
+  .foto-div {
+    margin: 15px auto;
+  }
+  .foto {
+    flex-direction: column;
+  }
+  .button {
+    height: 8%;
+  }
+}
+@media screen and (max-width: 767px) {
+  .div-top {
+    flex-direction: column;
+  }
+  .div-right {
+    flex-direction: column;
+    margin: 0 auto;
+  }
+  .foto-div img {
+    width: 250px;
+  }
+  .div-right img {
+    width: 250px;
+  }
+  .foto-div {
+    margin: 15px auto;
+  }
+  .foto {
+    flex-direction: column;
+  }
+  .div-left {
+    flex-direction: column;
+    margin: 0 auto;
+    justify-content: center;
+  }
+  .div-left img {
+    width: 250px;
+    margin: 10px auto;
+    display: flex;
+    justify-content: center;
+  }
+  h3,
+  h2,
+  p,
+  .button,
+  .products {
+    display: flex;
+    justify-content: center;
+    margin: 5% auto;
+  }
+}
+body {
+  height: 100vh;
+  background-color: rgba(196, 196, 196, 0.849);
+}
+h3,
+input {
+  font-family: "Martian Mono", monospace;
+}
+.container2 {
+  height: 70%;
+  display: flex;
+}
+.div1 {
+  padding: 70px 150px;
+}
+.address {
+  margin: 10px 0;
+}
+.email {
+  margin: 20px 0 10px 0;
+}
+.telephone {
+  margin: 20px 0 10px 0;
+}
+.div2 {
+  margin: 70px 200px;
+  background-color: white;
+  width: 500px;
+  height: 40vh;
+  border: 1px solid rgb(238, 250, 250);
+  border-radius: 6px;
+}
+div h3 {
+  display: flex;
+  justify-content: center;
+}
+#name {
+  padding: 0 30px;
+  margin: 20px 0 0 0;
+}
+.name {
+  width: 95%;
+  border: 1px solid rgba(196, 196, 196, 0.849);
+  border-radius: 5px;
+  background-color: rgba(196, 196, 196, 0.849);
+  height: 4vh;
+}
+#emaill {
+  padding: 0 30px;
+}
+.emaill {
+  margin: 20px 0 15px 0;
+  width: 95%;
+  border: 1px solid rgba(196, 196, 196, 0.849);
+  border-radius: 5px;
+  background-color: rgba(196, 196, 196, 0.849);
+  height: 4vh;
+}
+#message {
+  padding: 0 30px;
+  margin: 10px 0 40px 0;
+}
+.message {
+  width: 95%;
+  height: 10vh;
+  border: 1px solid rgba(196, 196, 196, 0.849);
+  border-radius: 5px;
+  background-color: rgba(196, 196, 196, 0.849);
+}
+.submit {
+  width: 100%;
+}
+.submit {
+  background-color: green;
+  height: 4vh;
+  color: white;
+  border: none;
+}
+.text {
+  color: rgb(2, 2, 41);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 10px 0 0 0;
+}
+footer {
+  height: 30%;
+  background-color: black;
+}
+.fa-brands {
+  color: white;
+  margin: 20px 5px;
+}
+.social-ikons {
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+  padding: 40px 0 10px 0;
+}
+.green {
+  color: green;
+}
+#textFooter {
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.address,
+.email,
+.telephone {
+  color: green;
+  font-weight: 32px;
+}
+
 @media screen and (max-width: 1023px) {
   /* .foto {
     flex-direction: column;
@@ -257,10 +588,10 @@ i {
   h3,
   h2,
   p,
-  .button , .products {
+  .button,
+  .products {
     display: flex;
     justify-content: center;
     margin: 5% auto;
   }
-  
 }
