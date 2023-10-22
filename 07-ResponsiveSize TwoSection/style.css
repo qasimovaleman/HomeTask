@@ -4,14 +4,23 @@
   box-sizing: border-box;
   outline: none;
 }
+
 .container123 {
   display: flex;
   justify-content: center;
   align-items: center;
   column-gap: 30px;
-  background-color: rgb(223, 243, 243);
 }
 
+.container123 div {
+  background-color: rgb(223, 243, 243);
+}
+.container123 div h4 {
+  margin: 0 auto;
+}
+.part-1 {
+  background-color: white;
+}
 .icon-green i,
 .iconh3 h4,
 .icon-p p {
@@ -31,7 +40,7 @@
   color: green;
   margin-top: 20px;
 }
-.icon-green .iconh3  h4 {
+.icon-green .iconh3 h4 {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -134,11 +143,9 @@ section .container {
 .div-right-234 {
   width: 50%;
 }
-.div-left-234
-.div-left-234 img:hover {
+.div-left-234 .div-left-234 img:hover {
   background-color: rgb(103, 161, 103);
   border: 5px solid green;
-  
 }
 .div-left-234 img {
   height: 48%;
@@ -153,12 +160,13 @@ section .container {
   flex-direction: column;
 }
 .div-right-234 h3,
-h4 , p {
+h4,
+p {
   float: left;
-  margin: 15px 0 ;
+  margin: 15px 0;
 }
 .div-right-234 .teaSta {
-color: black;
+  color: black;
 }
 .container-2 {
   margin-top: 30px;
@@ -392,6 +400,12 @@ footer {
   .div-top {
     flex-direction: column;
   }
+  .div-left {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-right: 10px;
+  }
   .div-right {
     margin: 0 auto;
     justify-content: space-between;
@@ -410,6 +424,10 @@ footer {
   }
   .button {
     height: 8%;
+  }
+  .container123 {
+    flex-direction: column;
+    row-gap: 30px;
   }
 }
 @media screen and (max-width: 767px) {
@@ -523,7 +541,7 @@ div h3 {
   background-color: rgba(196, 196, 196, 0.849);
 }
 .div1 p {
-  color:  black;
+  color: black;
 }
 .submit {
   width: 100%;
@@ -620,6 +638,32 @@ footer {
   .button {
     height: 8%;
   }
+  .check h3 {
+    float: center;
+    align-items: center;
+  }
+  .div1 {
+    flex-direction: column;
+    padding: 50px 120px;
+    margin: 0 auto;
+  }
+  .container-2 {
+    flex-direction: column;
+  }
+  .container2 {
+    flex-direction: column-reverse;
+  }
+  .div2 {
+    margin: auto auto;
+    background-color: white;
+    width: 400px;
+    height: 50vh;
+    border: 1px solid rgb(238, 250, 250);
+    border-radius: 6px;
+  }
+  footer {
+    height: 20%;
+  }
 }
 @media screen and (max-width: 767px) {
   .div-top {
@@ -660,5 +704,31 @@ footer {
     display: flex;
     justify-content: center;
     margin: 5% auto;
+  }
+  .container123 {
+    flex-direction: column;
+    row-gap: 30px;
+  }
+  .container2 {
+    flex-direction: column-reverse;
+  }
+  .div2 {
+    margin: 40px auto;
+    background-color: white;
+    width: 400px;
+    height: 40vh;
+    border: 1px solid rgb(238, 250, 250);
+    border-radius: 6px;
+  }
+  .div-left-234 img {
+    width: 70%;
+    height: 70%;
+    margin: 20px auto;
+  }
+  .check h3 {
+    float: center;
+  }
+  footer {
+    height: 10%;
   }
 }
