@@ -12,8 +12,15 @@
   column-gap: 30px;
 }
 
-.container123 div {
+.container123 .div-hover {
   background-color: rgb(223, 243, 243);
+  transform: scale(10deg);
+  transition: 0.2s;
+}
+.container123 .div-hover:hover {
+  transform: scale(1.1);
+  box-shadow: 0px 4px 3px green;
+  background-color: white;
 }
 .container123 div h4 {
   margin: 0 auto;
@@ -143,17 +150,24 @@ section .container {
 .div-right-234 {
   width: 50%;
 }
-.div-left-234 .div-left-234 img:hover {
+ .div-left-234 div img:hover {
   background-color: rgb(103, 161, 103);
-  border: 5px solid green;
+  
 }
-.div-left-234 img {
+.div-left-234 div img {
+  transform: scale(25deg);
+}
+.div-left-234 div img:hover{
+  transform: scale(1.1)
+}
+.div-left-234  img {
   height: 48%;
   width: 49%;
   display: flex;
   justify-content: center;
   align-items: center;
   margin: 50px auto;
+  border: 5px solid green;
 }
 .div-right-234 {
   display: flex;
@@ -219,10 +233,13 @@ h3.ezplare {
 }
 .foto-div {
   border: 1 px solid rgb(163, 223, 223);
-  transition: 0.3s;
+  transform: scale(10deg);
+  transition: 0.1s;
 }
+
 .foto-div:hover {
   transform: translateY(10px);
+  transform: scale(1.1);
 }
 .container-2 i .fa-solid {
   display: flex;
@@ -379,6 +396,14 @@ footer {
   justify-content: center;
   align-items: flex-end;
   padding: 40px 0 10px 0;
+}
+.social-ikons i {
+  transform: scale(15deg);
+  transition: 0.3s;
+}
+.social-ikons i:hover {
+  color: green;
+  transform: scale(1.4);
 }
 .green {
   color: green;
