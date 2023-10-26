@@ -116,11 +116,28 @@ header .header .button {
        column-gap: 1rem;
   margin-top: 12px;
 }
+header .header .button i {
+  color: white;
+  display: none;
+}
 header .header .button .log-in {
   border: none;
 }
 
 @media screen and (max-width: 767px) {
+  header .header .button {
+    display: none;
+  }
+  header .header .button i {
+    display: block;
+    color: white;
+  }
+  header .header .button .sign-up {
+    display: block;
+  }
+  header .header .button .log-in {
+    display: block;
+  }
   header .header .navigation nav ul li a {
     display: none;
   }
@@ -245,8 +262,7 @@ header .header .button .log-in {
   width: 30%;
 }
 .team-info .team-section .box img {
-  display: flex;
-  text-align: center;
+  margin: 0 auto;
 }
 .team-info .team-section .box .social-ikon {
   width: 40%;
@@ -282,10 +298,10 @@ footer .footer .footer-left {
   flex-direction: column;
 }
 footer .footer .footer-left .checbox2 {
+  margin: 15px 0;
   display: flex;
-  justify-content: space-between;
+  justify-content: center;
   align-items: center center;
-  flex-direction: column;
 }
 footer .footer .footer-left .checbox2 label {
   color: white;
@@ -295,6 +311,34 @@ footer .footer .footer-left .text h3 {
   font-size: 32px;
   font-weight: 700;
   line-height: 40.32px;
+}
+footer .footer .footer-left .input-btn {
+  margin-top: 15px;
+  position: relative;
+}
+footer .footer .footer-left .input-btn button {
+  width: 70px;
+  height: 46px;
+  color: #072125;
+  background: #b8e4da;
+  position: absolute;
+  top: 0;
+  right: -9px;
+  border: none;
+  border-radius: 0 8px 8px 0;
+}
+footer .footer .footer-left .input-btn input {
+  padding: 8px 5px;
+  width: 100%;
+  height: 30px;
+  border: none;
+  border-radius: 8px 8px 8px 8px;
+}
+footer .footer .footer-left .input-btn input::-moz-placeholder {
+  color: rgba(32, 72, 79, 0.2);
+}
+footer .footer .footer-left .input-btn input::placeholder {
+  color: rgba(32, 72, 79, 0.2);
 }
 footer .footer .footer-right {
   margin: 50px 0;
@@ -351,5 +395,81 @@ footer .footer .footer-right div nav ul li h3 {
   }
   .team-info .team-section .box {
     width: 55%;
+    display: flex;
+    justify-content: center;
+    align-items: center center;
+  }
+  .team-info .team-section .box .social-ikon {
+    width: 30%;
+    float: left;
+  }
+  .team-info .team-section .box .social-ikon h4 {
+    color: #072125;
+    font-size: 20px;
+    font-weight: 500;
+  }
+  .team-info .team-section .box .social-ikon p {
+    font-size: 18px;
+    font-weight: 300;
+  }
+}
+@media screen and (max-width: 767px) {
+  footer .footer {
+    display: flex;
+    justify-content: center;
+    align-items: center center;
+    flex-direction: column;
+    margin: 0 auto;
+  }
+  footer .footer .footer-left {
+    margin: 50px 0;
+    display: flex;
+    justify-content: center;
+    align-items: center center;
+    flex-direction: column;
+    margin: 0 auto;
+  }
+  footer .footer .footer-left .checbox2 {
+    display: flex;
+    justify-content: center;
+    align-items: center center;
+  }
+  footer .footer .footer-left .text h3 {
+    color: white;
+    font-size: 32px;
+    font-weight: 700;
+    line-height: 40.32px;
+  }
+  footer .footer .footer-left .input-btn {
+    margin-top: 15px;
+    position: relative;
+  }
+  footer .footer .footer-left .input-btn button {
+    top: 0;
+    right: -9px;
+  }
+  footer .footer .footer-left .input-btn input {
+    width: 100%;
+  }
+  footer .footer .footer-right {
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+    align-items: center center;
+    flex-direction: column;
+    row-gap: 2rem;
+    margin: 20px auto;
+  }
+  footer .footer .footer-right div nav ul li a {
+    text-align: center;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 24px;
+  }
+  footer .footer .footer-right div nav ul li h3 {
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 22.68px;
+    color: white;
   }
 }/*# sourceMappingURL=main.css.map */

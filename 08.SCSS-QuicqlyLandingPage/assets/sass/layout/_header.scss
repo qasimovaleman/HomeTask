@@ -30,6 +30,10 @@ header {
     }
 
     .button {
+      i {
+        color: white;
+        display: none;
+      }
       column-gap: 1rem;
       margin-top: 12px;
       .sign-up {
@@ -46,6 +50,19 @@ header {
 @media screen and (max-width: 767px) {
   header {
     .header {
+      .button {
+        display: none;
+        i {
+          display: block;
+          color: white;
+        }
+        .sign-up {
+          display: block;
+        }
+        .log-in {
+          display: block;
+        }
+      }
       .navigation {
         nav {
           ul {
