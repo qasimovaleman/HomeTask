@@ -68,7 +68,7 @@ table {
   cursor: pointer;
 }
 
-.team-info .team-button .open-vacancies, header .header .button .log-in {
+header .header .button .log-in {
   width: 82px;
   height: 41px;
   border-radius: 8px;
@@ -238,17 +238,83 @@ header .header .button .log-in {
   gap: 1rem;
 }
 .team-info .team-section .box {
+  display: flex;
+  justify-content: center;
+  align-items: center center;
+  flex-direction: column;
   width: 30%;
 }
 .team-info .team-section .box img {
   display: flex;
   text-align: center;
 }
-.team-info .team-button .open-vacancies {
-  background: #20484f;
-  padding: 10px 10px;
-  width: 150px;
-  margin: 10px;
+.team-info .team-section .box .social-ikon {
+  width: 40%;
+  display: flex;
+  justify-content: space-around;
+  align-items: center center;
+  -moz-column-gap: 10px;
+       column-gap: 10px;
+}
+.team-info .team-section .box h4 {
+  color: #072125;
+  font-size: 24px;
+  font-weight: 700;
+}
+.team-info .team-section .box p {
+  font-size: 18px;
+  font-weight: 400;
+}
+
+footer {
+  background: #072125;
+}
+footer .footer {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center center;
+}
+footer .footer .footer-left {
+  margin: 50px 0;
+  display: flex;
+  justify-content: center;
+  align-items: center center;
+  flex-direction: column;
+}
+footer .footer .footer-left .checbox2 {
+  display: flex;
+  justify-content: space-between;
+  align-items: center center;
+  flex-direction: column;
+}
+footer .footer .footer-left .checbox2 label {
+  color: white;
+}
+footer .footer .footer-left .text h3 {
+  color: white;
+  font-size: 32px;
+  font-weight: 700;
+  line-height: 40.32px;
+}
+footer .footer .footer-right {
+  margin: 50px 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center center;
+  -moz-column-gap: 2rem;
+       column-gap: 2rem;
+}
+footer .footer .footer-right div nav ul li a {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 24px;
+  color: white;
+}
+footer .footer .footer-right div nav ul li h3 {
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 22.68px;
+  color: white;
 }
 
 @media screen and (max-width: 1023px) {

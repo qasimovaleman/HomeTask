@@ -16,37 +16,98 @@
   }
 }
 //  ................
-.team-info{
-  @include flex(center,center);
+.team-info {
+  @include flex(center, center);
   flex-direction: column;
   .team-section {
     @include flex(center, center);
     flex-wrap: wrap;
     gap: 1rem;
     .box {
+      @include flex(center, center);
+      flex-direction: column;
       width: 30%;
       img {
         display: flex;
         text-align: center;
       }
+      .social-ikon {
+        width: 40%;
+        @include flex(space-around, center);
+        column-gap: 10px;
+        
+      }
+      h4 {
+        color: #072125;
+
+        font-size: 24px;
+        font-weight: 700;
+      }
+      p {
+        font-size: 18px;
+        font-weight: 400;
+      }
     }
   }
-  .team-button {
-    .open-vacancies {
-  
-      @extend %second-button;
-      background: #20484f;
-      padding: 10px 10px;
-      width: 150px;
-      margin: 10px ;
+  //
+}
+footer {
+  background: #072125;
+
+  .footer {
+    @include flex(space-evenly, center);
+    .footer-left {
+      margin: 50px 0;
+      @include flex();
+      flex-direction: column;
+      .checbox2 {
+        @include flex(space-between, center);
+        flex-direction: column;
+        label {
+          color: white;
+        }
+      }
+      .text {
+        h3 {
+          color: white;
+          font-size: 32px;
+          font-weight: 700;
+          line-height: 40.32px;
+        }
+      }
+    }
+    .footer-right {
+      margin: 50px 0;
+      @include flex(space-between, center);
+      column-gap: 2rem;
+      div {
+        nav {
+          ul {
+            li {
+              a {
+                font-weight: 400;
+                font-size: 16px;
+                line-height: 24px;
+                color: white;
+              }
+              h3 {
+                font-weight: 700;
+                font-size: 18px;
+                line-height: 22.68px;
+                color: white;
+              }
+            }
+          }
+        }
+      }
     }
   }
 }
 
 //
 @media screen and (max-width: 1023px) {
-  .team-info{
-    @include flex(center,center);
+  .team-info {
+    @include flex(center, center);
     flex-direction: column;
     .team-section {
       @include flex(center, center);
@@ -54,25 +115,14 @@
       gap: 1.5rem;
       .box {
         width: 40%;
-        
       }
     }
-    // .team-button {
-    //   .open-vacancies {
-    
-    //     @extend %second-button;
-    //     background: #20484f;
-    //     padding: 10px 10px;
-    //     width: 150px;
-    //     margin: 10px ;
-    //   }
-    // }
   }
 }
 // ................
 @media screen and (max-width: 767px) {
-  .team-info{
-    @include flex(center,center);
+  .team-info {
+    @include flex(center, center);
     flex-direction: column;
     .team-section {
       @include flex(center, center);
@@ -80,12 +130,11 @@
       gap: 1.8rem;
       .box {
         width: 55%;
-        
       }
     }
     // .team-button {
     //   .open-vacancies {
-    
+
     //     @extend %second-button;
     //     background: #20484f;
     //     padding: 10px 10px;
