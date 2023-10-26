@@ -1,0 +1,289 @@
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+  display: block;
+}
+
+body {
+  line-height: 1;
+}
+
+ol, ul {
+  list-style: none;
+}
+
+blockquote, q {
+  quotes: none;
+}
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: "";
+  content: none;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+* {
+  text-decoration: none;
+}
+
+.container {
+  max-width: 1200px;
+  padding: 0 5%;
+  margin: 0 auto;
+}
+
+.hero-banner .banner-info .banner-left .button .learn-more, .hero-banner .banner-info .banner-left .button .sign-up, header .header .button .sign-up {
+  width: 82px;
+  height: 41px;
+  border-radius: 8px;
+  background: #b8e4da;
+  color: #20484f;
+  padding: 10px 16px;
+  cursor: pointer;
+}
+
+.team-info .team-button .open-vacancies, header .header .button .log-in {
+  width: 82px;
+  height: 41px;
+  border-radius: 8px;
+  background-color: transparent;
+  color: white;
+  padding: 10px 16px;
+  cursor: pointer;
+}
+
+header {
+  height: 60px;
+  background-color: #20484F;
+}
+header .header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center center;
+}
+header .header .logo {
+  margin-top: 20px;
+}
+header .header .logo h4 {
+  color: white;
+  font-size: 24px;
+  font-weight: 700;
+}
+header .header .navigation {
+  margin-top: 25px;
+}
+header .header .navigation nav ul {
+  display: flex;
+  justify-content: center;
+  align-items: center center;
+  -moz-column-gap: 2rem;
+       column-gap: 2rem;
+}
+header .header .navigation nav ul li a {
+  font-weight: 400;
+  font-size: 16px;
+  color: white;
+  margin: auto 0;
+}
+header .header .button {
+  -moz-column-gap: 1rem;
+       column-gap: 1rem;
+  margin-top: 12px;
+}
+header .header .button .log-in {
+  border: none;
+}
+
+@media screen and (max-width: 767px) {
+  header .header .navigation nav ul li a {
+    display: none;
+  }
+}
+.hero-banner {
+  background: #fafafa;
+}
+.hero-banner .banner-info {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center center;
+}
+.hero-banner .banner-info .banner-left {
+  width: 50%;
+}
+.hero-banner .banner-info .banner-left h5 {
+  color: #20484f;
+  padding-top: 60px;
+  font-size: 18px;
+  font-weight: 700;
+}
+.hero-banner .banner-info .banner-left h1 {
+  margin-top: 10px;
+  color: #20484F;
+  font-size: 64px;
+  font-weight: 700;
+  line-height: 76.8px;
+}
+.hero-banner .banner-info .banner-left h4 {
+  margin-top: 10px;
+  color: #20484F;
+  font-size: 24px;
+  font-weight: 400;
+  line-height: 36px;
+}
+.hero-banner .banner-info .banner-left .button {
+  gap: 2rem;
+  margin-top: 10px;
+  padding-bottom: 30px;
+}
+.hero-banner .banner-info .banner-left .button .sign-up {
+  background-color: #20484F;
+  color: white;
+  margin-right: 16px;
+}
+.hero-banner .banner-info .banner-left .button .learn-more {
+  background-color: white;
+  color: #072125;
+  width: 110px;
+  padding: 10px 5px;
+  border: none;
+}
+.hero-banner .banner-info .banner-right {
+  width: 50%;
+}
+
+@media screen and (max-width: 767px) {
+  .hero-banner .banner-info {
+    display: flex;
+    justify-content: center;
+    align-items: center center;
+    flex-direction: column-reverse;
+  }
+  .hero-banner .banner-info .banner-left {
+    margin: 0 auto;
+    width: 100%;
+  }
+  .hero-banner .banner-info .banner-left h1 {
+    margin-top: 10px;
+    color: #20484F;
+    font-size: 44px;
+    font-weight: 500;
+    line-height: 76.8px;
+  }
+  .hero-banner .banner-info .banner-left h4 {
+    margin-top: 10px;
+    color: #20484F;
+    font-size: 18px;
+    font-weight: 300;
+    line-height: 36px;
+  }
+  .hero-banner .banner-info .banner-right {
+    width: 100%;
+    margin: 0 auto;
+  }
+}
+.home-text h2 {
+  margin-top: 10%;
+  color: #072125;
+  line-height: 50.4px;
+  font-size: 40px;
+  font-weight: 700;
+  text-align: center;
+}
+.home-text p {
+  font-size: 400;
+  font-weight: 16px;
+  line-height: 24px;
+  text-align: center;
+  margin-bottom: 6%;
+}
+
+.team-info {
+  display: flex;
+  justify-content: center;
+  align-items: center center;
+  flex-direction: column;
+}
+.team-info .team-section {
+  display: flex;
+  justify-content: center;
+  align-items: center center;
+  flex-wrap: wrap;
+  gap: 1rem;
+}
+.team-info .team-section .box {
+  width: 30%;
+}
+.team-info .team-section .box img {
+  display: flex;
+  text-align: center;
+}
+.team-info .team-button .open-vacancies {
+  background: #20484f;
+  padding: 10px 10px;
+  width: 150px;
+  margin: 10px;
+}
+
+@media screen and (max-width: 1023px) {
+  .team-info {
+    display: flex;
+    justify-content: center;
+    align-items: center center;
+    flex-direction: column;
+  }
+  .team-info .team-section {
+    display: flex;
+    justify-content: center;
+    align-items: center center;
+    flex-wrap: wrap;
+    gap: 1.5rem;
+  }
+  .team-info .team-section .box {
+    width: 40%;
+  }
+}
+@media screen and (max-width: 767px) {
+  .team-info {
+    display: flex;
+    justify-content: center;
+    align-items: center center;
+    flex-direction: column;
+  }
+  .team-info .team-section {
+    display: flex;
+    justify-content: center;
+    align-items: center center;
+    flex-wrap: wrap;
+    gap: 1.8rem;
+  }
+  .team-info .team-section .box {
+    width: 55%;
+  }
+}/*# sourceMappingURL=main.css.map */

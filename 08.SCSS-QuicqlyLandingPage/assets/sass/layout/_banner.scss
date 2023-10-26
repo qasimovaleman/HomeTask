@@ -1,0 +1,83 @@
+.hero-banner {
+  background: #fafafa;
+  .banner-info {
+    width: 100%;
+    @include flex();
+    .banner-left {
+      width: 50%;
+      h5 {
+        color: #20484f;
+        padding-top: 60px;
+        font-size: 18px;
+        font-weight: 700;
+      }
+      h1 {
+        margin-top: 10px;
+        color: $header-color;
+        font-size: 64px;
+        font-weight: 700;
+        line-height: 76.8px;
+      }
+      h4 {
+        margin-top: 10px;
+        color: $header-color;
+        font-size: 24px;
+        font-weight: 400;
+        line-height: 36px;
+      }
+      .button {
+        gap: 2rem;
+        margin-top: 10px;
+        padding-bottom: 30px;
+        .sign-up {
+          @extend %primary-button;
+          background-color: $header-color;
+          color: white;
+          margin-right: 16px;
+        }
+        .learn-more {
+          @extend %primary-button;
+          background-color: white;
+          color: #072125;
+          width: 110px;
+          padding: 10px 5px;
+          border: none;
+        }
+      }
+    }
+    .banner-right {
+      width: 50%;
+    }
+  }
+}
+//
+@media screen and (max-width: 767px) {
+  .hero-banner {
+    .banner-info {
+      @include flex();
+      flex-direction: column-reverse;
+      .banner-left {
+        margin: 0 auto;
+         width: 100%;
+        h1 {
+          margin-top: 10px;
+          color: $header-color;
+          font-size: 44px;
+          font-weight: 500;
+          line-height: 76.8px;
+        }
+        h4 {
+          margin-top: 10px;
+          color: $header-color;
+          font-size: 18px;
+          font-weight: 300;
+          line-height: 36px;
+        }
+      }
+      .banner-right {
+        width: 100%;
+        margin: 0 auto;
+      }
+    }
+  }
+}
