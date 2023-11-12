@@ -1,0 +1,38 @@
+header {
+  background-color: $header-bg-color;
+  .container {
+    .header {
+      padding: 10px 0;
+      @include flex(space-between, center);
+      column-gap: 45%;
+      .header-left {
+        @include flex(center, center);
+        float: left;
+        column-gap: 1rem;
+        div {
+          a {
+            text-decoration: none;
+            color: white;
+          }
+        }
+      }
+     
+      .header-right {
+        @include flex(center, center);
+        //float: right;
+        column-gap: 1rem;
+        div {
+          p {
+            color: white;
+          }
+        }
+      }
+    }
+  }
+}
+ //----------------------RESPONSIVE-HEADER-------------
+ @media screen and (max-width:767px){
+  header{
+    display: none
+  }
+}

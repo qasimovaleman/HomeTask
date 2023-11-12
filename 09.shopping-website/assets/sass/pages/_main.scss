@@ -1,0 +1,562 @@
+.main-section {
+  background-color: $main-bg-color;
+  .main-text-foto {
+    // width: 100%;
+    @include flex(center, center);
+    padding-left: 9%;
+    .main-text-left {
+      margin-right: 60px;
+      // width: 50%;
+      position: relative;
+      h4 {
+        color: #df4244;
+        padding-top: 60px;
+        font-size: 24px;
+        font-weight: 500;
+        line-height: 40.8px;
+      }
+      h3 {
+        color: #212121;
+
+        font-size: 40px;
+        font-weight: 700;
+        line-height: 68px;
+      }
+      p {
+        font-size: 16px;
+        font-weight: 400;
+        line-height: 27.2px;
+        color: #212121;
+        padding: 10px 0 50px 0;
+      }
+      .main-button {
+        padding-bottom: 120px;
+        .shop-now {
+          width: 192px;
+          height: 52px;
+          border-radius: 8px;
+          background-color: $main-button-bg-color;
+          color: white;
+          border: none;
+          &:hover {
+            border: 3px solid $main-button-bg-color;
+            color: $main-button-bg-color;
+            background-color: white;
+          }
+        }
+      }
+      .main-but-img {
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        width: 90px;
+        margin-bottom: 40px;
+      }
+    }
+    .main-foto-right {
+      //width: 50%;
+      div {
+        img {
+          padding-right: 6%;
+        }
+      }
+    }
+  }
+}
+
+//-------------------RESPONSIVE--------------
+@media screen and (max-width: 767px) {
+  .main-section {
+    display: none;
+  }
+}
+//-----------------PART-5--------------------
+
+.section-main-banner {
+  background-color: $main-banner-section-bg-color;
+  .main-banner {
+    @include flex(center, center);
+    column-gap: 4rem;
+    .banner-text-ikon {
+      margin: 40px 0;
+      @include flex(center, center);
+    }
+  }
+}
+//---------------------RESPONSIVE----------------
+@media screen and (max-width: 767px) {
+  .section-main-banner {
+    display: none;
+  }
+}
+//-----------------------PART-6------------------
+
+.bags {
+  .bags-4 {
+    @include flex(center, center);
+    margin: 60px 0 100px 0;
+    column-gap: 1rem;
+    .bags-text {
+      background-color: $bags-4-bg-color;
+      width: 244px;
+      height: 162px;
+      position: relative;
+      div {
+        img {
+          position: absolute;
+          bottom: 0;
+          right: 0;
+        }
+        p {
+          font-size: 20px;
+          font-weight: 500;
+          line-height: 30.6px;
+          position: absolute;
+          top: 25px;
+          left: 15px;
+        }
+      }
+    }
+  }
+}
+//----------------------------RESPONSIVE-PART-6-------------------------------
+@media screen and (max-width: 767px) {
+  .bags {
+    .bags-4 {
+      @include flex(center, center);
+      flex-direction: column;
+      row-gap: 1rem;
+      .bags-text {
+        background-color: $bags-4-bg-color;
+        width: 80%;
+        height: 162px;
+        position: relative;
+        div {
+          img {
+            position: absolute;
+            bottom: 0;
+            right: 20;
+          }
+          p {
+            position: absolute;
+            top: 45px;
+            left: 15px;
+          }
+        }
+      }
+    }
+  }
+}
+//-------------------------------------PART-7----------------------------------
+.featuredProducts {
+  .feat-product-h2-p {
+    h2 {
+      font-size: 32px;
+      font-weight: 500;
+      line-height: 54.4px;
+    }
+    p {
+      font-size: 18px;
+      font-weight: 400;
+      line-height: 27.2px;
+    }
+
+    @include flex(space-between, center);
+    column-gap: 48%;
+  }
+  .bags-3-Featured-Products {
+    @include flex(center, center);
+    column-gap: 1rem;
+    .bags-foto-ikon {
+      background-color: #f9f9f9;
+      height: 520px;
+      width: 360px;
+      & .pinkBags {
+        img {
+          height: 230px;
+        }
+        &.bags-palidi {
+          img {
+            height: 219px;
+          }
+        }
+      }
+
+      .but-ikon {
+        margin-top: 10px;
+        column-gap: 65%;
+        @include flex(space-between, center);
+        button {
+          @extend %New-btn;
+        }
+        .red-but {
+          button {
+            @extend %Btn-30;
+          }
+        }
+
+        &.palidi-but-ikon {
+          column-gap: 90%;
+        }
+      }
+      .featured-bags {
+        @include flex(center, center);
+        img {
+          margin: 0 auto;
+        }
+      }
+      .featured-star {
+        margin: 25px 0 15px 10px;
+      }
+      & .pinkStar {
+        margin-top: 38px;
+      }
+      & .palidiStar {
+        margin-top: 54px;
+      }
+      .shoulder-text {
+        display: flex;
+        flex-direction: column;
+        margin-left: 10px;
+        p {
+          font-size: 16px;
+          font-weight: 400;
+          margin: 8px 0;
+        }
+      }
+      .dollar-text {
+        margin: 15px 0 15px 10px;
+        display: flex;
+
+        h4 {
+          color: #f75145;
+
+          font-size: 20px;
+          font-weight: 600;
+          margin-right: 10px;
+        }
+
+        h5 {
+          color: #363636bf;
+          margin-top: 2px;
+          font-size: 16px;
+          font-weight: 400;
+        }
+      }
+      .Add-to-card {
+        margin: 0 auto;
+        padding: 0 25px;
+        button {
+          margin: 0 auto;
+          @extend %Add-to-card-btn;
+        }
+      }
+    }
+  }
+}
+//-------------------------------------PART-8-----------------------------------
+.seller-8 {
+  background-color: #fff7f7;
+  margin-top: 30px;
+  .BestSeller {
+    .best-seller-h2-p {
+      h2 {
+        font-size: 32px;
+        font-weight: 500;
+        line-height: 54.4px;
+      }
+      p {
+        font-size: 18px;
+        font-weight: 400;
+        line-height: 27.2px;
+      }
+
+      @include flex(space-between, center);
+      column-gap: 48%;
+      margin: 30px 0 15px 0;
+    }
+    .bags-3-Best-Seller {
+      @include flex(center, center);
+      column-gap: 1rem;
+      .bags-foto-ikon-seller {
+        height: 500px;
+        width: 360px;
+        background-color: white;
+        .but-ikon-seller {
+          margin-top: 10px;
+          column-gap: 65%;
+          @include flex(space-between, center);
+          button {
+            @extend %Btn-30;
+          }
+          .s30-sel {
+            button {
+              @extend %Btn-30;
+            }
+          }
+          .seller-30 {
+            @extend %Btn-30;
+          }
+          &.but-ikon-3 {
+            padding: 93px;
+          }
+          //  &.palidi-but-ikon {
+          //   column-gap: 90%;
+          // }
+        }
+        .best-bags {
+          @include flex(center, center);
+          img {
+            margin: 0 auto;
+          }
+          .best-image-1 {
+            margin: 109px 0 20px 0;
+          }
+          .best-image-3 {
+            padding: 93px 0 20px 0;
+          }
+        }
+        .featured-star-seller {
+          margin: 25px 0 15px 20px;
+        }
+
+        .shoulder-text-seller {
+          display: flex;
+          flex-direction: column;
+          margin-left: 10px;
+          p {
+            font-size: 16px;
+            font-weight: 400;
+            margin: 8px 0;
+          }
+        }
+        .dollar-text-seller {
+          margin: 15px 0 15px 10px;
+          display: flex;
+
+          h4 {
+            color: #f75145;
+
+            font-size: 20px;
+            font-weight: 600;
+            margin-right: 10px;
+          }
+
+          h5 {
+            color: #363636bf;
+            margin-top: 2px;
+            font-size: 16px;
+            font-weight: 400;
+          }
+        }
+
+        .Add-to-card-seller {
+          margin: 0 auto;
+          padding: 0 50%;
+          float: center;
+          button {
+            margin: 0 auto;
+            @extend %Add-to-card-btn;
+            float: center;
+          }
+        }
+      }
+    }
+  }
+}
+//---------------------------------PART-10-----------------------------------//
+.input-snobella {
+  @include flex(space-between, center);
+  column-gap: 5rem;
+  h2 {
+    font-size: 40px;
+    font-weight: 700;
+  }
+  .input-search {
+    .input-src {
+      input {
+        height: 32px;
+        border-radius: 8px;
+        color: white;
+        width: 400px;
+        outline: none;
+        border: none;
+        background-color: #f7f9fc;
+        padding: 4px 15px 4px 5px;
+      }
+      & ::placeholder {
+        color: #aaaaaa;
+        padding: auto 5%;
+      }
+    }
+    .img-search {
+      position: absolute;
+      bottom: 2px;
+      left: 360px;
+      img {
+        padding: 1px 10px;
+      }
+    }
+  }
+}
+//--------------------------------RESPONSIVE-PART-7--------------------------//
+@media screen and (max-width: 767px) {
+  .featuredProducts {
+    .feat-product-h2-p {
+      h2 {
+        font-size: 20px;
+      }
+      p {
+        font-size: 16px;
+        br {
+          display: none;
+        }
+      }
+      column-gap: 5rem;
+
+      @include flex(space-between, center);
+    }
+    .bags-3-Featured-Products {
+      @include flex(center, center);
+      flex-direction: column;
+      row-gap: 1rem;
+      .bags-foto-ikon {
+        width: 80%;
+
+        height: 520px;
+
+        .featured-bags {
+          @include flex(center, center);
+
+          .shoulder-text {
+            display: flex;
+
+            //flex-direction: row;
+          }
+          .dollar-text {
+            margin: 15px 0 15px 10px;
+            display: flex;
+          }
+          .Add-to-card {
+            padding: 0 90px;
+            margin: 0 auto;
+            button {
+              margin: 0 auto;
+              @extend %Add-to-card-btn;
+
+              width: 480px;
+              height: 30px;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+//--------------------------------RESPONSIVE-PART-8-------------------------//
+@media screen and (max-width: 767px) {
+  .seller-8 {
+    background-color: #fff7f7;
+    margin-top: 30px;
+    .BestSeller {
+      .best-seller-h2-p {
+        h2 {
+          font-size: 20px;
+        }
+        p {
+          font-size: 16px;
+        }
+
+        @include flex(space-between, center);
+        column-gap: 5rem;
+      }
+      .bags-3-Best-Seller {
+        @include flex(center, center);
+        flex-direction: column;
+        row-gap: 1rem;
+        .bags-foto-ikon-seller {
+          width: 80%;
+
+          .but-ikon-seller {
+            margin-top: 10px;
+            column-gap: 65%;
+            @include flex(space-between, center);
+            button {
+              @extend %Btn-30;
+            }
+            .s30-sel {
+              button {
+                @extend %Btn-30;
+              }
+            }
+            .seller-30 {
+              @extend %Btn-30;
+            }
+            &.but-ikon-3 {
+              padding: 93px;
+            }
+            //  &.palidi-but-ikon {
+            //   column-gap: 90%;
+            // }
+          }
+          .best-bags {
+            @include flex(center, center);
+            img {
+              margin: 0 auto;
+            }
+            .best-image-1 {
+              margin: 109px 0 20px 0;
+            }
+            .best-image-3 {
+              padding: 93px 0 20px 0;
+            }
+          }
+          .featured-star-seller {
+            margin: 25px 0 15px 20px;
+          }
+
+          .shoulder-text-seller {
+            display: flex;
+            flex-direction: column;
+            margin-left: 10px;
+            p {
+              font-size: 16px;
+              font-weight: 400;
+              margin: 8px 0;
+            }
+          }
+          .dollar-text-seller {
+            margin: 15px 0 15px 10px;
+            display: flex;
+
+            h4 {
+              color: #f75145;
+
+              font-size: 20px;
+              font-weight: 600;
+              margin-right: 10px;
+            }
+
+            h5 {
+              color: #363636bf;
+              margin-top: 2px;
+              font-size: 16px;
+              font-weight: 400;
+            }
+          }
+
+          .Add-to-card-seller {
+            margin: 0 auto;
+            padding: 0 50%;
+            float: center;
+            button {
+              margin: 0 auto;
+              @extend %Add-to-card-btn;
+              float: center;
+            }
+          }
+        }
+      }
+    }
+  }
+}
