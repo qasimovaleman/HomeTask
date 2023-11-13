@@ -7,6 +7,7 @@
     font-weight: 700;
   }
   .input-search {
+    margin-top: 10px;
     position: relative;
   }
   .banner-search {
@@ -48,10 +49,10 @@
   }
 }
 //------------------RESPONSIVE-BANNER-SECTION-1-----------------
-@media screen and (max-width:767px){
+@media screen and (max-width: 767px) {
   .banner-section-1 {
-   display: none;
-}
+    display: none;
+  }
 }
 .section-banner-2 {
   .navigation {
@@ -87,10 +88,9 @@
 }
 //------------------RESPONSIVE-BANNER-SECTION-2-----------------
 
-
 //------------------RESPONSIVE-BANNER-SECTION-2-----------------
-@media screen and (max-width:767px){
-  .section-banner-2{
+@media screen and (max-width: 767px) {
+  .section-banner-2 {
     display: none;
   }
 }

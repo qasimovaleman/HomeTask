@@ -227,6 +227,7 @@ header .container .header .header-right div p {
   font-weight: 700;
 }
 .banner-section-1 .input-search {
+  margin-top: 10px;
   position: relative;
 }
 .banner-section-1 .banner-search {
@@ -617,7 +618,7 @@ header .container .header .header-right div p {
 .seller-8 .BestSeller .best-bags .best-image-3 {
   margin: 83px 0 10px 0;
 }
-.seller-8 .BestSeller .featured-star-seller {
+.seller-8 .BestSeller .best-star-seller {
   margin: 25px 0 15px 10px;
 }
 .seller-8 .BestSeller .shoulder-text-seller {
@@ -647,11 +648,12 @@ header .container .header .header-right div p {
   font-weight: 400;
 }
 .seller-8 .BestSeller .Add-to-card-seller {
-  margin: 0 auto;
+  margin: 0  auto;
   padding: 0 25px;
 }
 .seller-8 .BestSeller .Add-to-card-seller button {
   margin: 0 auto;
+
 }
 
 @media screen and (max-width: 767px) {
@@ -706,14 +708,15 @@ header .container .header .header-right div p {
 @media screen and (max-width: 767px) {
   .BestSeller .best-seller-h2-p {
     -moz-column-gap: 3rem;
-    column-gap: 3rem;
+    column-gap: 10px;
     display: flex;
     justify-content: center;
     align-items: center;
   }
 
   .BestSeller .best-seller-h2-p h2 {
-    font-size: 20px;
+    font-size: 8px;
+    padding-left: 10%;
   }
   .BestSeller .best-seller-h2-p p {
     font-size: 16px;
@@ -843,6 +846,7 @@ nav ul li a {
 }
 nav ul li {
   margin-top: 10px;
+  text-align: center;
 }
 nav ul li a :hover {
   color: #206363;
@@ -863,9 +867,9 @@ nav ul li h4 {
   padding: auto 10%;
 }
 .footer-bottom span {
-  margin: 30px 0 ;
+  margin: 30px 0;
 }
-.foot-bot{
+.foot-bot {
   height: 80px;
 }
 /* -----------RESPONSIVE-PART-11------------- */
@@ -885,8 +889,6 @@ nav ul li h4 {
     margin: 0 auto;
   }
 
-
-
   .footer-bottom {
     flex-direction: column;
     margin: auto;
@@ -894,7 +896,12 @@ nav ul li h4 {
   }
 }
 
-.s30-sel button {
+.s30-sel {
+  width: 79px;
+  height: 32px;
+}
+
+.seller-30 {
   width: 79px;
   height: 32px;
   color: white;
@@ -902,4 +909,11 @@ nav ul li h4 {
   border-radius: 8px;
   border: none;
   cursor: pointer;
+}
+.seller-30 p {
+  text-align: center;
+  padding-top: 8px;
+}
+.img-3-boz{
+  margin-bottom: 6px;
 }
