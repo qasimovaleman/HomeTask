@@ -648,12 +648,11 @@ header .container .header .header-right div p {
   font-weight: 400;
 }
 .seller-8 .BestSeller .Add-to-card-seller {
-  margin: 0  auto;
+  margin: 0 auto;
   padding: 0 25px;
 }
 .seller-8 .BestSeller .Add-to-card-seller button {
   margin: 0 auto;
-
 }
 
 @media screen and (max-width: 767px) {
@@ -703,6 +702,13 @@ header .container .header .header-right div p {
     .dollar-text {
     margin: 15px 0 15px 10px;
     display: flex;
+  }
+  .featuredProducts
+    .bags-3-Featured-Products
+    .bags-foto-ikon
+    .Add-to-card
+    button {
+    width: 95%;
   }
 } /*# sourceMappingURL=main.css.map */
 @media screen and (max-width: 767px) {
@@ -872,6 +878,10 @@ nav ul li h4 {
 .foot-bot {
   height: 80px;
 }
+.snobella-bottom nav ul li :hover {
+  color: #03c9c9;
+}
+
 /* -----------RESPONSIVE-PART-11------------- */
 @media screen and (max-width: 767px) {
   .snobella-bottom {
@@ -914,6 +924,6 @@ nav ul li h4 {
   text-align: center;
   padding-top: 8px;
 }
-.img-3-boz{
+.img-3-boz {
   margin-bottom: 6px;
 }
